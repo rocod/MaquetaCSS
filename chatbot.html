@@ -21,12 +21,13 @@
     
 </head>
 
-<body onload="openBp();">
+<body>
     <app>
      
     <div class="sidebar"><!--!-->
     <!--!--><div class="top-row pl-4 navbar navbar-dark"><!--!-->
-    <!--!--><a class="navbar-brand text-center" href="index.html"><img src="img/logo.png"></a>
+    <!--!--><a id="alogo" class="navbar-brand text-center" href="index.html"><img src="img/logo_emma_transparente.png"></a>
+  
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent"><!--!-->
         <span class="navbar-toggler-icon"></span>
     </button><!--!-->
@@ -34,39 +35,37 @@
 
 <div class="collapse" id="menu"><!--!-->
     <ul class="nav flex-column"><!--!-->
+          
         <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="index.html" class="nav-link"><!--!-->
-                <span class="oi oi-home" aria-hidden="true"></span> Inicio
-            </a><!--!-->
-        </li><!--!-->
-        <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="que_es_grooming.html" class="nav-link "><!--!-->
+            <!--!--><a href="que_es_grooming.html" class="nav-link"><!--!-->
                 <span class="oi oi-infinity" aria-hidden="true"></span> ¿Qué es Grooming?
             </a><!--!-->
         </li><!--!-->
+        
         <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="quienes_somos.html" class="nav-link "><!--!-->
-                <span class="oi oi-people" aria-hidden="true"></span> Quiénes Somos
-            </a><!--!-->
-        </li><!--!-->
-        <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="chatbot.html" class="nav-link active"><!--!-->
-                <span class="oi oi-chat" id="show-bp" aria-hidden="true"></span> Chatbot
+            <!--!--><a href="chatbot.html" class="nav-link  active"><!--!-->
+                <span class="oi oi-chat" id="show-bp" aria-hidden="true"></span> ¿Necesitás Ayuda?
             </a><!--!-->
         </li><!--!-->
         <li class="nav-item px-3"><!--!-->
             <!--!--><a href="guias_digitales.html" class="nav-link"><!--!-->
-                <span class="oi oi-bookmark" aria-hidden="true"></span> Guías Digitales
+                <span class="oi oi-data-transfer-download"></span> Guías Digitales
             </a><!--!-->
         </li><!--!-->
-        <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="folletos.html" class="nav-link"><!--!-->
-                <span class="oi oi-book" aria-hidden="true"></span> Folletos
+         <li class="nav-item px-3"><!--!-->
+            <!--!--><a href="noticias.html" class="nav-link"><!--!-->
+                <span class="oi oi-browser" aria-hidden="true"></span> Noticias
             </a><!--!-->
         </li><!--!-->
+        
         <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="denuncias.html" class="nav-link"><!--!-->
+            <!--!--><a style="line-height: 1.2rem;" href="denuncias.html" class="nav-link">
                 <span class="oi oi-warning" aria-hidden="true"></span>¿Cómo Denunciar?
+            </a><!--!-->
+        </li><!--!-->
+        <li class="nav-item px-3"><!--!-->
+            <!--!--><a href="quienes_somos.html" class="nav-link"><!--!-->
+                <span class="oi oi-people" aria-hidden="true"></span> Conocenos
             </a><!--!-->
         </li><!--!-->
     </ul><!--!-->
@@ -78,7 +77,7 @@
        
     </div>
 
-    <div class="content px-4"><!--!-->
+    <div class="content" id="contieneSlide"><!--!-->
         <!--!--><!--!-->
         <div class="containter-fluid" >
         
@@ -105,19 +104,33 @@
     <script src="js/bootstrap.bundle.js"></script>   
      <script src="https://prueba-emma.herokuapp.com/assets/modules/channel-web/inject.js"></script>
      <script>
-      window.botpressWebChat.init({ host: 'https://prueba-emma.herokuapp.com',
-       botId: 'emma-1'});   
-
-
+      window.botpressWebChat.init({ 
+      	host: 'https://prueba-emma.herokuapp.com',
+        botId: 'emma-1', 
+        botName: 'Emma', 
+        hideWidget: false, // Name of your bot
+		  botAvatarUrl: null, 
+		  botConvoDescription: 'Descripcion de Bot',
+		  showConversationsButton: false, // Whether or not to show the conversations button
+		  showUserName: false, // Whether or not to show the user's name
+		  showUserAvatar: false, // Whether or not to show the user's avatar
+		  enableTranscriptDownload: false, // Whether or not to show the transcript download button
+		  enableArrowNavigation: false, //Whether or to to support arrow navigation (e.g scroll conversation, focus on buttons)
+		 
+		  enableReset: false, // Whether or not reset button will be shown to the user
+		  extraStylesheet: 'https://candekn.github.io/Capra/css/bpstyle.css' // Define a custom style sheet to override Botpress styling
+		});
     </script>
     <script type="text/javascript">
         function openBp() {
-            window.botpressWebChat.sendEvent({ type: 'toggle' });
+            window.botpressWebChat.sendEvent({ type: 'show' });
             window.botpressWebChat.sendEvent({ type: 'message', text: '¡Hola!' });
-        }
+        };
        // window.onload=openBp();
     </script>
-    
+    <script type="text/javascript">
+        window.onload = openBp;
+    </script>
 
 </body>
 

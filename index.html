@@ -20,8 +20,8 @@
     <app>
      
     <div class="sidebar"><!--!-->
-    <!--!--><div class="top-row pl-4 navbar navbar-dark"><!--!-->
-    <!--!--><a class="navbar-brand text-center" href="index.html"><img src="img/logo.png"></a>
+    <!--!--><div class="top-row pl-4 navbar navbar-dark text-center"><!--!-->
+    <!--!--><a id="alogo" class="navbar-brand text-center" href="index.html"><img src="img/logo_emma_transparente.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent"><!--!-->
         <span class="navbar-toggler-icon"></span>
     </button><!--!-->
@@ -29,53 +29,51 @@
 
 <div class="collapse" id="menu"><!--!-->
     <ul class="nav flex-column"><!--!-->
+        
         <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="index.html" class="nav-link active"><!--!-->
-                <span class="oi oi-home" aria-hidden="true"></span> Inicio
+            <!--!--><a href="que_es_grooming.html" class="nav-link"><!--!-->
+               <span  class="oi oi-infinity" aria-hidden="true"></span> ¿Qué es Grooming?
             </a><!--!-->
         </li><!--!-->
-        <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="que_es_grooming.html" class="nav-link "><!--!-->
-                <span class="oi oi-infinity" aria-hidden="true"></span> ¿Qué es Grooming?
-            </a><!--!-->
-        </li><!--!-->
-        <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="quienes_somos.html" class="nav-link"><!--!-->
-                <span class="oi oi-people" aria-hidden="true"></span> Quiénes Somos
-            </a><!--!-->
-        </li><!--!-->
+        
         <li class="nav-item px-3"><!--!-->
             <!--!--><a href="chatbot.html" class="nav-link "><!--!-->
-                <span class="oi oi-chat" id="show-bp" aria-hidden="true"></span> Chatbot
+                <span class="oi oi-chat" id="show-bp" aria-hidden="true"></span> ¿Necesitás Ayuda?
             </a><!--!-->
         </li><!--!-->
         <li class="nav-item px-3"><!--!-->
             <!--!--><a href="guias_digitales.html" class="nav-link"><!--!-->
-                <span class="oi oi-bookmark" aria-hidden="true"></span> Guías Digitales
+                <span class="oi oi-data-transfer-download"></span> Guías Digitales
+            </a><!--!-->
+        </li><!--!-->
+         <li class="nav-item px-3"><!--!-->
+            <!--!--><a href="noticias.html" class="nav-link"><!--!-->
+                <span class="oi oi-browser" aria-hidden="true"></span> Noticias
+            </a><!--!-->
+        </li><!--!-->
+        
+        <li class="nav-item px-3"><!--!-->
+            <!--!--><a style="line-height: 1.2rem;" href="denuncias.html" class="nav-link"><!--!-->
+        <span class="oi oi-warning" aria-hidden="true"></span>¿Cómo Denunciar?
             </a><!--!-->
         </li><!--!-->
         <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="folletos.html" class="nav-link"><!--!-->
-                <span class="oi oi-book" aria-hidden="true"></span> Folletos
-            </a><!--!-->
-        </li><!--!-->
-        <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="denuncias.html" class="nav-link"><!--!-->
-                <span class="oi oi-warning" aria-hidden="true"></span>¿Cómo Denunciar?
+            <!--!--><a  href="quienes_somos.html" class="nav-link"><!--!-->
+                <span class="oi oi-people" aria-hidden="true"></span> Conocenos
             </a><!--!-->
         </li><!--!-->
     </ul><!--!-->
 </div><!--!-->
 </div>
 
-<div class="main"><!--!-->
+<div class="main" id="inicio"><!--!-->
     <!--!--><div class="top-row px-4">
        
     </div>
 
-    <div class="content px-4"><!--!-->
+    <div id="contieneSlide" class="content" ><!--!-->
         <!--!--><!--!-->
-        <div class="containter-fluid">
+        <div >
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -103,54 +101,58 @@
             <div class="carousel-item">
                <img src="img/slide1.png" class="d-md-none d-none d-sm-none d-lg-block d-xl-block w-100" alt="...">
               <img src="img/slide1m.png" class="d-md-block d-sm-block d-lg-none d-xl-none w-100" alt="...">
-              <div class="carousel-caption ">
+              <div class="carousel-caption">
               <h5 >#NoAlGrooming</h5>
                   <p>ES NECESARIO DENUNCIAR LOS CASOS DE GROOMING</p>
               </div>
                 </div>
             </div>
           </div>
-         
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-      </div>
-      <!-- circulos -->
-      <div class="row text-center mt-4">
-      <div class="col-lg-4">
-        <img src="img/robot.png" class="rounded-circle"  width="140" height="140" />
-      
-        <h3>Chatbot</h3>
-        <p>Disponible 24 horas del día, los 365 días del año para consultar todo lo necesario sobre Grooming</p>
-        <p><a class="btn btn-secondary" href="#" role="button">+ Info »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-         <img src="img/denunciar.png" class="rounded-circle"  width="140" height="140" />
-        <h3>Cómo Denunciar</h3>
-        <p>Información sobre como preservar las pruebas de Grooming, y cómo proceder para realizar la denuncia</p>
-        <p><a class="btn btn-secondary" href="#" role="button">+ Info »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img src="img/guias.png" class="rounded-circle"  width="140" height="140" />
-        <h3>Guías Digitales</h3>
-        <p>Ofrecemos múltiples guías descargables, sobre configuración de privacidad en redes sociales, en el navegador, y muchas más...</p>
-        <p><a class="btn btn-secondary" href="#" role="button">+ Info »</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div>
+         </div>
 
-    <!--fin circulos -->
+         <div class="container">       
+      
+      
+          <!-- circulos -->
+          <div class="row text-center mt-4">
+          <div class="col-lg-4">
+            <p style="background-color: #e3e3e3" class="rounded">
+              <img src="img/robot.png" class="rounded"  width="140" height="140" />
+            </p>  
+          
+            <h3>¿Necesitás Ayuda?</h3>
+            <p>Disponible 24 horas del día, los 365 días del año para consultar todo lo necesario sobre Grooming</p>
+            <p><a class="btn btn-secondary" href="chatbot.html" role="button">+ Info »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+             <p style="background-color: #e3e3e3" class="rounded">
+             <img src="img/denunciar.png" class="rounded"  width="140" height="140" />
+           </p>
+            <h3>¿Cómo Denunciar?</h3>
+            <p>Información sobre como preservar las pruebas de Grooming, y cómo proceder para realizar la denuncia</p>
+            <p><a class="btn btn-secondary" href="denuncias.html" role="button">+ Info »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <p style="background-color: #e3e3e3" class="rounded"><img src="img/guias.png" class="rounded"  width="140" height="140" /></p>
+            <h3>Guías Digitales</h3>
+            <p>Ofrecemos múltiples guías descargables, sobre configuración de privacidad en redes sociales, en el navegador, y muchas más...</p>
+            <p><a class="btn btn-secondary" href="guias_digitales.html" role="button">+ Info »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div>
+
+        <!--fin circulos -->
+      
 
       <!-- comienzan tarjetas-->
-      <div class="row mb-2 mt-4">
+      <div class="row mb-2 mt-4" id="noticias">
     <div class="col-md-6">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
           <strong class="d-inline-block mb-2 text-secondary">#NoAlGrooming</strong>
           <h3 class="mb-0">¿Qué es Grooming?</h3>
-         
+         <div class="mb-1 text-muted">12 Oct 2020</div>
           <p class="card-text mb-auto">Es una serie de conductas y acciones emprendidas por un adulto, a través de Internet...</p>
-          <a href="que_es_grooming.html" class="stretched-link">Leer más</a>
+          <a href="detalle_noticia.html" class="stretched-link">Leer más</a>
         </div>
         <div class="col-auto d-none d-lg-block">
            <img src="img/neneacceso.png" />
@@ -160,11 +162,11 @@
     <div class="col-md-6">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-secondary">#MicaOrtega</strong>
+          <strong class="d-inline-block mb-2 text-secondary">#MamaEnLinea</strong>
           <h3 class="mb-0">¿Quiénes Somos?</h3>
-          
-          <p class="mb-auto">Mama en Line@ surgió de la lucha de dos mamas que sus hijas fueron víctimas de Grooming.</p>
-          <a href="quienes_somos.html" class="stretched-link">Leer más</a>
+          <div class="mb-1 text-muted">22 Sep 2020</div>
+          <p class="card-text mb-auto">Mama en Line@ surgió de la lucha de dos mamas que sus hijas fueron víctimas de Grooming.</p>
+          <a href="detalle_noticia.html" class="stretched-link">Leer más</a>
         </div>
         <div class="col-auto d-none d-lg-block">
 
@@ -173,7 +175,15 @@
       </div>
     </div>
   </div>
-    <!-- fin tarjetas tarjetas-->
+
+  </div>
+  <div class="container-fluid">
+    <footer class="row text-center" id="footer">
+      <div class="col p-3">Emma 2020</div>
+    </footer>
+  </div>
+    
+    
     </div>
 
 

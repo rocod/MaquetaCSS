@@ -21,7 +21,7 @@
      
     <div class="sidebar"><!--!-->
     <!--!--><div class="top-row pl-4 navbar navbar-dark"><!--!-->
-    <!--!--><a class="navbar-brand text-center" href="index.html"><img src="img/logo.png"></a>
+    <!--!--><a id="alogo" class="navbar-brand text-center" href="index.html"><img src="img/logo_emma_transparente.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent"><!--!-->
         <span class="navbar-toggler-icon"></span>
     </button><!--!-->
@@ -29,63 +29,170 @@
 
 <div class="collapse" id="menu"><!--!-->
     <ul class="nav flex-column"><!--!-->
-         <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="index.html" class="nav-link"><!--!-->
-                <span class="oi oi-home" aria-hidden="true"></span> Inicio
-            </a><!--!-->
-        </li><!--!-->
-        <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="que_es_grooming.html" class="nav-link "><!--!-->
+
+       <li class="nav-item px-3"><!--!-->
+            <!--!--><a href="que_es_grooming.html" class="nav-link"><!--!-->
                 <span class="oi oi-infinity" aria-hidden="true"></span> ¿Qué es Grooming?
             </a><!--!-->
         </li><!--!-->
-        <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="quienes_somos.html" class="nav-link "><!--!-->
-                <span class="oi oi-people" aria-hidden="true"></span> Quiénes Somos
-            </a><!--!-->
-        </li><!--!-->
+        
         <li class="nav-item px-3"><!--!-->
             <!--!--><a href="chatbot.html" class="nav-link "><!--!-->
-                <span class="oi oi-chat" id="show-bp" aria-hidden="true"></span> Chatbot
+                <span class="oi oi-chat" id="show-bp" aria-hidden="true"></span> ¿Necesitás Ayuda?
             </a><!--!-->
         </li><!--!-->
         <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="guias_digitales.html" class="nav-link active"><!--!-->
-                <span class="oi oi-bookmark" aria-hidden="true"></span> Guías Digitales
+            <!--!--><a href="guias_digitales.html" class="nav-link  active"><!--!-->
+                <span class="oi oi-data-transfer-download"></span> Guías Digitales
             </a><!--!-->
         </li><!--!-->
-        <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="folletos.html" class="nav-link"><!--!-->
-                <span class="oi oi-book" aria-hidden="true"></span> Folletos
+         <li class="nav-item px-3"><!--!-->
+            <!--!--><a href="noticias.html" class="nav-link"><!--!-->
+                <span class="oi oi-browser" aria-hidden="true"></span> Noticias
             </a><!--!-->
         </li><!--!-->
+        
         <li class="nav-item px-3"><!--!-->
-            <!--!--><a href="denuncias.html" class="nav-link"><!--!-->
+            <!--!--><a style="line-height: 1.2rem;" href="denuncias.html" class="nav-link">
                 <span class="oi oi-warning" aria-hidden="true"></span>¿Cómo Denunciar?
+            </a><!--!-->
+        </li><!--!-->
+        <li class="nav-item px-3"><!--!-->
+            <!--!--><a href="quienes_somos.html" class="nav-link"><!--!-->
+                <span class="oi oi-people" aria-hidden="true"></span> Conocenos
             </a><!--!-->
         </li><!--!-->
     </ul><!--!-->
 </div><!--!-->
 </div>
 
-<div class="main"><!--!-->
+<div class="main" id="inicio"><!--!-->
     <!--!--><div class="top-row px-4">
        
     </div>
 
-    <div class="content px-4"><!--!-->
+    <div class="content"  id="contieneSlide"><!--!-->
         <!--!--><!--!-->
-        <div class="containter-fluid" >
-        
+        <div class="container" >
+             <h1 class="tituloSeccion mb-4 p-4">Guías Digitales</h1>
+            <div class="row">
+                <div class="col mb-2">
+                    <button type="button" class="btn btn-dark mr-2  mb-3">TODOS</button>
+                    <button type="button" class="btn btn-primary mr-2  mb-3">Niñas y Niños</button>
+                    <button type="button" class="btn btn-secondary mr-2  mb-3">Adolescentes</button>
+                    <button type="button" class="btn btn-danger mr-2  mb-3">Padres</button>
+                    <button type="button" class="btn btn-warning mr-2  mb-3">Docentes</button>
+                </div>
+            </div>    
+           
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-5 shadow-sm h-md-250 position-relative">
+                 <div class="col-auto d-none d-sm-block ">
+                   <img src="img/facebook.png" />
+                </div>
+                <div class="col-sm-12 d-block d-sm-none">
+                   <img src="img/facebook.png" width="100%" />
+                </div>
+                <div class="col p-2 d-flex flex-column position-static">             
+                  <div class="card-body">
+                    <h3># Guía Facebook</h3>
+                    <div class="row">
+                        <div class="col mb-3">
+                        <button type="button" class="btn btn-danger mr-2">Padres</button>
+                        <button type="button" class="btn btn-warning mr-2">Docentes</button>
+                        </div>
+                    </div>
+                    <h5 class="card-title"><span class="oi oi-calendar"></span> 28/10/2020</h5>
+                    <p class="card-text">Guía de Configuración de Privacidad en Facebook. Mantener privada la información de las redes sociales, sobre todo en las cuentas que utilizan menores.</p>
+                    <a href="descargas/LeyMicaOrtega.pdf" target="_blank" download="Ley Mica Ortega" class="btn btn-primary">Descargar PDF <span class="oi oi-data-transfer-download"></span></a>
+                  </div>
+                 </div>
+            </div>
+            
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-5 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-sm-block ">
+                   <img src="img/leyMicaOrtega.png" />
+                </div>
+                <div class="col-sm-12 d-block d-sm-none">
+                   <img src="img/leyMicaOrtega.png" width="100%" />
+                </div>
+                <div class="col p-2 d-flex flex-column position-static">             
+                  <div class="card-body">
+                    <h3>Ley # Mica Ortega</h3>
+                    <div class="row">
+                        <div class="col mb-3">
+                        <button type="button" class="btn btn-danger mr-2">Padres</button>
+                        <button type="button" class="btn btn-warning mr-2">Docentes</button>
+                        </div>
+                    </div>
+                    <h5 class="card-title"><span class="oi oi-calendar"></span> 28/10/2020</h5>
+                    <p class="card-text">CAMPAÑA NACIONAL PERMANENTE DE
+                    CONCIENTIZACION Y PREVENCIÓN DEL
+                    GROOMING EN ARGENTINA.</p>
+                    <a href="descargas/LeyMicaOrtega.pdf" target="_blank" download="Ley Mica Ortega" class="btn btn-primary">Descargar PDF <span class="oi oi-data-transfer-download"></span></a>
+                  </div>
+                 </div>
+            </div>
+
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-5 shadow-sm h-md-250 position-relative">
+                 <div class="col-auto d-none d-sm-block ">
+                   <img src="img/facebook.png" />
+                </div>
+                <div class="col-sm-12 d-block d-sm-none">
+                   <img src="img/facebook.png" width="100%" />
+                </div>
+                <div class="col p-2 d-flex flex-column position-static">             
+                  <div class="card-body">
+                    <h3># Guía Facebook</h3>
+                    <div class="row">
+                        <div class="col mb-3">
+                        <button type="button" class="btn btn-danger mr-2">Padres</button>
+                        <button type="button" class="btn btn-warning mr-2">Docentes</button>
+                        </div>
+                    </div>
+                    <h5 class="card-title"><span class="oi oi-calendar"></span> 28/10/2020</h5>
+                    <p class="card-text">Guía de Configuración de Privacidad en Facebook. Mantener privada la información de las redes sociales, sobre todo en las cuentas que utilizan menores.</p>
+                    <a href="descargas/LeyMicaOrtega.pdf" target="_blank" download="Ley Mica Ortega" class="btn btn-primary">Descargar PDF <span class="oi oi-data-transfer-download"></span></a>
+                  </div>
+                 </div>
+            </div>
+            
+            <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-5 shadow-sm h-md-250 position-relative">
+                <div class="col-auto d-none d-sm-block ">
+                   <img src="img/leyMicaOrtega.png" />
+                </div>
+                <div class="col-sm-12 d-block d-sm-none">
+                   <img src="img/leyMicaOrtega.png" width="100%" />
+                </div>
+                <div class="col p-2 d-flex flex-column position-static">             
+                  <div class="card-body">
+                    <h3>Ley # Mica Ortega</h3>
+                    <div class="row">
+                        <div class="col mb-3">
+                        <button type="button" class="btn btn-danger mr-2">Padres</button>
+                        <button type="button" class="btn btn-warning mr-2">Docentes</button>
+                        </div>
+                    </div>
+                    <h5 class="card-title"><span class="oi oi-calendar"></span> 28/10/2020</h5>
+                    <p class="card-text">CAMPAÑA NACIONAL PERMANENTE DE
+                    CONCIENTIZACION Y PREVENCIÓN DEL
+                    GROOMING EN ARGENTINA.</p>
+                    <a href="descargas/LeyMicaOrtega.pdf" target="_blank" download="Ley Mica Ortega" class="btn btn-primary">Descargar PDF <span class="oi oi-data-transfer-download"></span></a>
+                  </div>
+                 </div>
+            </div>
          
-         
-      </div>
+     
 
       <!-- comienzan tarjetas-->
     
     <!-- fin tarjetas tarjetas-->
     </div>
 
+    <div class="container-fluid">
+    <footer class="row text-center" id="footer">
+      <div class="col p-3">Emma 2020</div>
+    </footer>
+  </div>
 
         <!--!-->
     </div><!--!-->
